@@ -1046,7 +1046,7 @@ async def deletevps(ctx, member: discord.Member = None):
     ), view=DeleteConfirmView(member, vps))
 
 
-@bot.command(name="help")
+@bot.command(name="info")
 async def help_cmd(ctx):
     admin     = is_admin(ctx.author.id)
     main_adm  = ctx.author.id == MAIN_ADMIN_ID
